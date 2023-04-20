@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+body::-webkit-scrollbar{
+    display:none;
+}
+
+body{
+    background-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-wrap: normal;
+}
+
+nav{
+    font-family: 'Chivo Mono', monospace;
+    height: 10vh;
+    width:100vw;
+}
+
+nav ul{
+    display: flex;
+    background-color: black;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type:  none;
+    cursor: pointer;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: White;
+    padding: 10px;
+}
+
+.brand{
+    color: white;
+    display: flex;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.brand img{
+    height: 49px;
+}
+
+.container{
+    display: flex;
+    height: 50%;
+    background-color: black;
+    
+    width: 100%;
+    
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+   
+    border-radius: 15px 15px 0px 0px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.songList::-webkit-scrollbar{
+    display:none;
+}
+
+@media screen and (min-width: 850px){
+    .songItem{
+        display: flex;
+        font-family: 'Chivo Mono', monospace;
+        align-items: center;
+        justify-content: left;
+        margin: 20px;
+        padding-left: 20px;
+        padding-right:20px;        
+        border: 1px solid grey;
+        border-radius:10px;
+        background-color: darkslategray;
+    }
+}
+
+.songItem{
+    display: flex;
+    font-family: 'Chivo Mono', monospace;
+    align-items: center;
+    justify-content: left;
+    color: white;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right:20px;
+    width: 45vw;
+    border: 1px solid grey;
+    border-radius:10px;
+    background-color: darkslategray;
+}
+
+.songItem:hover{
+    background-color:#1DB954;
+    border-radius: 15px;
+    height:8vh;
+    cursor: pointer;
+}
+
+.songItem i{
+    cursor: pointer;
+}
+
+.songItem span{
+    padding: 5px;
+    display:flex;
+    margin-left:20%;
+}
+
+.songItem img{
+    width: 30px;
+    padding: 10px;
+}
+
+.songNo{
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.songNo::-webkit-scrollbar{
+    display:none;
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    background-color: black;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100vw;
+    flex-direction: column;
+}
+
+.bottom input{
+    width: 70vw;
+    cursor: pointer;
+    height: 10px;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.icons i{
+    padding: 10px;
+    color: #1DB954;
+}
+
+#songInfo{
+    position: absolute;
+    left:15vw;
+    color:#1DB954;
+    padding-top: 16px;
+}
+
+@media screen and (max-width: 800px){
+    #songInfo{
+       
+        overflow-x: scroll;
+        width: 90px;
+        height: 20px;
+        position:center;
+        padding-top: 16px;
+        padding-right: 50px;
+        cursor:pointer;
+    }
+    
+    #songInfo::-webkit-scrollbar{
+        display:none;
+    }
+
+}

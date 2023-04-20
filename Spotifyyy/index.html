@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class = "Main">
+    
+    
+    <nav>
+        <ul>
+            <li class="brand"><img src="./covers/logo2.png" alt="Spotify">
+            <span><h3>Spotify</h3></span>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">AboutUs</a></li>
+            <li><a href="#">Account</a></li>
+            <!---<li class="butt"><button class="darkMode">Theme</button></li> -->
+        </ul>
+        
+    </nav>
+
+    <div class="container" >
+        <div class="songList" >
+            <div>
+                <div class="songItem" id="0">
+                    <img src="./covers/c1.jpg">
+                    <span class="songNo">Bailando </span>
+
+                </div>
+
+                <div class="songItem" id="1">
+                    <img src="./covers/danzak.jpg">
+                    <span class="songNo">Danza Kuduro</span>
+
+               </div>
+
+               <div class="songItem"  id="2">
+                <img src="./covers/MB1.jpg">
+                <span class="songNo">Sayonara</span>
+                </div>
+
+                <div class="songItem" id="3">
+                    <img src="./covers/shak.jpg">
+                    <span class="songNo">Whenever Wherever</span>
+
+                </div>
+
+                <div class="songItem" id="4">
+                    <img src="./covers/shak.jpg">
+                    <span class="songNo">Hips Don't Lie</span>
+
+                </div>
+
+                <div class="songItem" id="5">
+                    <img src="./covers/shak.jpg">
+                    <span class="songNo">Waka Waka</span>
+
+                </div>
+                
+                <div class="songItem" id="6">
+                    <img src="./covers/cwc15.jpg">
+                    <span class="songNo">CWC 15 Theme</span>
+
+                </div>
+
+                <div class="songItem" id="7">
+                    <img src="./covers/shar1.jpg">
+                    <span class="songNo">Ajab Si</span>
+
+                </div>
+
+                <div class="songItem" id="8">
+                    <img src="./covers/nani.jpg">
+                    <span class="songNo">Champesaave Nannu</span>
+
+                </div>
+           </div>
+        </div>
+        
+    </div>
+    <div class="bottom">
+        <input  type="range" name ="range" class = "barDeco" id="myProgressBar" min="0" value="0" max="100" >
+        <div class="icons">
+            
+            <i class="fas fa-2x fa-step-backward" id="masterBack"></i>
+            <i class="far fa-2x fa-play-circle" id = "masterPlay"></i>
+            <i class="fas fa-2x fa-step-forward" id="masterForw"></i>
+        </div>
+        <div id="songInfo"></div>
+        <div id="dura"></div>
+    </div>
+    <script src="https://kit.fontawesome.com/e9bec8fc60.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
